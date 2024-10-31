@@ -12,7 +12,7 @@ A PHP-based tool for compressing and extracting .zip files. This tool provides a
 
 # Installation
 • Clone the repository:
-  git clone https://github.com/your-username/zip-file-tool.git
+  git clone https://github.com/thaihoa110/zip-compression-extraction.git
 
 • Navigate to the project folder:
   cd zip-file-tool
