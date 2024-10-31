@@ -44,7 +44,7 @@ function zipFolder($folderPath, $zipPath) {
         }
 
         $zip->close();
-        return ["Successfully compressed to: <a href='$zipPath' download>$zipPath</a>", "success"];
+        return ["Successfully compressed to: $zipPath", "success"];
     } else {
         return ["Unable to create zip file.", "error"];
     }
@@ -59,7 +59,7 @@ function extractZip($zipPath, $extractPath) {
     if ($zip->open($zipPath) === TRUE) {
         $zip->extractTo($extractPath);
         $zip->close();
-        return ["Successfully extracted to: <a href='$extractPath' download>$extractPath</a>", "success"];
+        return ["Successfully extracted.", "success"];
     } else {
         return ["Unable to extract zip file.", "error"];
     }
@@ -71,7 +71,7 @@ function extractZip($zipPath, $extractPath) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zip File Tool</title>
+    <title>Compress and Extract ZIP</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -85,12 +85,12 @@ function extractZip($zipPath, $extractPath) {
 
         .container {
             width: 800px;
+            display: flex;
+            justify-content: space-between;
             padding: 20px;
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: space-between;
         }
 
         .section {
@@ -184,7 +184,7 @@ function extractZip($zipPath, $extractPath) {
                 <label for="zipPathExtract">ZIP File Path:</label>
                 <input type="text" id="zipPathExtract" name="zipPathExtract" required>
 
-                <label for="extractPath">Extract To (optional):</label>
+                <label for="extractPath">Extract to Path (optional):</label>
                 <input type="text" id="extractPath" name="extractPath" placeholder="./">
 
                 <button type="submit" name="extract">Extract ZIP</button>
