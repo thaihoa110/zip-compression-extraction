@@ -21,10 +21,11 @@ A PHP-based tool for compressing and extracting .zip files. This tool provides a
 
 Usage
 • Open your web browser and navigate to the URL where the project is hosted (e.g., http://localhost/zip-file-tool/file_compress_extract.php).
+
 • Use the interface to:
-  Enter the path of the folder you want to compress or the path of the .zip file you want to extract.
-  Choose the action (Compress or Extract).
-  View the success or error message upon completion.
+  - Enter the path of the folder you want to compress or the path of the .zip file you want to extract.
+  - Choose the action (Compress or Extract).
+  - View the success or error message upon completion.
 
 # File Structure
 • file_compress_extract.php: Main PHP file with form and logic for compression and extraction.
