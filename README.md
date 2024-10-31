@@ -15,12 +15,12 @@ A PHP-based tool for compressing and extracting .zip files. This tool provides a
   git clone https://github.com/thaihoa110/zip-compression-extraction.git
 
 • Navigate to the project folder:
-  cd zip-file-tool
+  cd zip-compression-extraction
 
 • Place the project folder on your web server and ensure PHP is configured correctly.
 
 Usage
-• Open your web browser and navigate to the URL where the project is hosted (e.g., http://localhost/zip-file-tool/file_compress_extract.php).
+• Open your web browser and navigate to the URL where the project is hosted (e.g., http://localhost/zip-compression-extraction/file_compress_extract.php).
 
 • Use the interface to:
   - Enter the path of the folder you want to compress or the path of the .zip file you want to extract.
