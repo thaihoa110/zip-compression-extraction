@@ -33,7 +33,5 @@ Usage
 
 # Examples
 • Compress: Enter a folder path and select "Compress to ZIP" to create a .zip file of the folder.
-• Extract: Provide a .zip file path and specify the destination folder, then select "Extract ZIP" to extract contents.
 
-# License
-• This project is licensed under the MIT License. See the LICENSE file for details.
+• Extract: Provide a .zip file path and specify the destination folder, then select "Extract ZIP" to extract contents.
